@@ -1,0 +1,3 @@
+predictionId,createdAt,userId,modelVersion,decision,riskLevel,riskScore,transactionAmount,paymentType,transactionVelocity,ipRisk,deviceRisk,geoDistance,impossibleTravel,hourOfDay,repeatedFailures,newDeviceFlag
+365a575f-b4f2-4b55-a065-c86d9ef429a0,2026-06-29T18:55:58.038703+00:00,user-1,random-forest-hybrid-v1,ALLOWED,LOW_RISK,11.85,650.0,0.0,0.0,4.0,3.0,2.0,0.0,14.0,0.0,0.0
+af12980b-1dc9-464d-af80-7058b24ee485,2026-06-29T18:55:58.152590+00:00,user-1,random-forest-hybrid-v1,BLOCKED,HIGH_RISK,91.29,95000.0,1.0,9.0,91.0,84.0,2100.0,1.0,2.0,5.0,1.0

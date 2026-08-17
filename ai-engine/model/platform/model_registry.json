@@ -1,0 +1,41 @@
+{
+  "activeChallenger": "random-forest-hybrid-v1",
+  "activeChampion": "random-forest-hybrid-v1",
+  "models": [
+    {
+      "algorithm": "RandomForestClassifier",
+      "featureColumns": [
+        "transactionAmount",
+        "paymentType",
+        "transactionVelocity",
+        "ipRisk",
+        "deviceRisk",
+        "geoDistance",
+        "impossibleTravel",
+        "hourOfDay",
+        "repeatedFailures",
+        "newDeviceFlag"
+      ],
+      "metrics": {
+        "accuracy": 0.7833,
+        "f1": 0.5475,
+        "precision": 0.5767,
+        "recall": 0.5211,
+        "rocAuc": 0.7598
+      },
+      "modelPath": "C:\\Users\\aradh\\Desktop\\Smart Fraud Detection & Prevention System for UPI and Credit Card Transactions Using MERN Stack\\ai-engine\\model\\platform\\model_versions\\random-forest-hybrid-v1.joblib",
+      "registeredAt": "2026-06-29T18:55:59.482192+00:00",
+      "rollbackSafe": true,
+      "stage": "challenger",
+      "status": "standby",
+      "thresholdPolicy": {
+        "highRisk": 0.75,
+        "mediumRisk": 0.4
+      },
+      "trainedAt": "2026-06-29T18:55:59.360528+00:00",
+      "trainedRows": 6000,
+      "version": "random-forest-hybrid-v1"
+    }
+  ],
+  "updatedAt": "2026-06-29T18:55:59.482192+00:00"
+}

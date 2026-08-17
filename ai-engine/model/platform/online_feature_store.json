@@ -1,0 +1,20 @@
+{
+  "user-1": {
+    "features": {
+      "deviceRisk": 84.0,
+      "geoDistance": 2100.0,
+      "hourOfDay": 2.0,
+      "impossibleTravel": 1.0,
+      "ipRisk": 91.0,
+      "newDeviceFlag": 1.0,
+      "paymentType": 1.0,
+      "repeatedFailures": 5.0,
+      "transactionAmount": 95000.0,
+      "transactionVelocity": 9.0
+    },
+    "lastPredictionId": "af12980b-1dc9-464d-af80-7058b24ee485",
+    "lastRiskScore": 91.29,
+    "riskLevel": "HIGH_RISK",
+    "updatedAt": "2026-06-29T18:55:58.152590+00:00"
+  }
+}

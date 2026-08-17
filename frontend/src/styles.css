@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #f4f4f5;
+  background: #09090b;
+  font-family:
+    Inter,
+    Geist,
+    Manrope,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #09090b;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(124, 58, 237, 0.13), transparent 28%),
+    radial-gradient(circle at 88% 0%, rgba(59, 130, 246, 0.1), transparent 30%),
+    linear-gradient(135deg, #09090b 0%, #111111 46%, #18181b 100%);
+}
+
+.dark {
+  color: #f4f4f5;
+  background: #09090b;
+}
+
+.dark body,
+.dark html {
+  background: #09090b;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+::selection {
+  background: rgba(124, 58, 237, 0.38);
+  color: #f8fafc;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(9, 9, 11, 0.95);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(124, 58, 237, 0.48);
+  border-radius: 999px;
+  border: 2px solid #09090b;
+}
+
+@layer utilities {
+  .focus-ring {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950;
+  }
+
+  .surface {
+    @apply border border-[#2A2A2E] bg-[#18181B]/85 text-zinc-100 shadow-soft backdrop-blur-xl;
+  }
+
+  .muted-text {
+    @apply text-zinc-400;
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
